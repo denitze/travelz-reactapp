@@ -1,12 +1,11 @@
+import FirstSec from "./FirstSec"
+
 const Home = () => {
     return ( 
         <section>
-            <h1>Home</h1>
+            <FirstSec />
         </section>
      );
 }
  
 export default Home;
-<section>
-    <h1>Home</h1>
-</section>

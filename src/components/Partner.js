@@ -1,6 +1,12 @@
+import Testimonial from "./Testimonial";
+import Trending from "./Trending";
+
 const Partner = () => {
     return ( 
-        <h1>Partner</h1>
+        <>
+        <Testimonial />
+        <Trending />
+        </>
      );
 }
  

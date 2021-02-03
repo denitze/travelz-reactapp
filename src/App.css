@@ -92,8 +92,8 @@ h1 {
   color: var(--main-heading-color);
   font-family: var(--main-heading-ff);
   font-weight: bold;
-  width:50%;
-  font-size: 5rem;
+  max-width:40%;
+  font-size: 4rem;
 }
 
 .hero-sec p{
@@ -126,16 +126,122 @@ select {
   border-radius: 5px;
 }
 
-button{
+.orangeBtn{
   color: var(--white);
   background: var(--btn-color);
   border: 1px solid var(--btn-color);
   border-radius:5px;
-  padding:.7rem 4rem;
+  padding:.5rem 2rem;
  
 }
 
+/* HOME  */
 
+.first-sec, .about-sec, .edward-sec{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:15vh 4rem;
+}
+
+.test-sec {
+  width:80%;
+  margin:0 auto;
+}
+
+.test-sec p {
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+h5{
+  font-size: 1rem;
+}
+
+.edward-sec .founder{
+  margin:0;
+  font-size: .8rem;
+}
+
+
+.about-sec, .edward-sec{
+  flex-direction: row-reverse;
+}
+.first-sec article, .about-sec article, .edward-sec article{
+  max-width:35%;
+}
+
+h2 {
+  color: var(--main-heading-color);
+  font-family: var(--main-heading-ff);
+  font-weight: bold;
+  font-size: 2.25rem;
+}
+
+.first-sec p , .about-sec p{
+  font-family: var(--para-ff);
+  font-weight: 300;
+  margin: 1rem 0 3rem 0;
+}
+
+/* DESTINATION */
+
+.destination, .trending-sec {
+  width:90%;
+  margin:2rem auto;
+  min-height: 50vh;
+  background: url(./img/destinations.svg) left/ contain no-repeat;
+  padding:5rem 0;
+}
+
+.destinationFlex, .trendingFlex {
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.destinationFlex a, .trendingFlex a, .trend-div a{
+  color: var(--btn-color);
+  font-weight: 600;
+  font-family: var(--btn-review-ff);
+}
+
+.destinationFlex span, .trendingFlex span {
+  font-size: .7rem;
+}
+
+.destinationIMGs, .trendingIMGs{
+  /* width:90%; */
+  margin: 3rem auto;
+  display:flex;
+  justify-content: space-between;
+}
+
+.trend-div {
+  width:20%;
+}
+
+.trend-div img {
+  width:100%;
+}
+
+.trend-div h4 {
+  margin-top: -4.5rem;
+}
+
+.trend-div p {
+  margin: 1rem 0;
+}
+
+
+.img-div{
+  position:relative;
+}
+
+.country {
+  position:absolute;
+  bottom:0;
+  left:.5rem;
+}
 /* FOOTER  */
 
 footer {
@@ -152,8 +258,12 @@ footer {
   border-bottom: 1px solid grey;
 }
 
-.footer-sec li, #copyright {
-  line-height: 1.9rem;
+p {
+  font-family: var(--para-ff);
+  font-weight: 300;
+  color: var(--p-color);
+  line-height: 1.7rem;
+
 }
 
 .footer-sec div img, .footer-sec h3 {

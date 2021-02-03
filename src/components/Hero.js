@@ -1,3 +1,5 @@
+import Button from "./Button"
+
 const Hero = () => {
     return ( 
         <section class="hero-sec">
@@ -18,7 +20,7 @@ const Hero = () => {
                         <option value="Date">Date</option>
                     </select>
                 </form>
-                <button>Explore</button>
+                <Button content="Explore"/>
 
         </section>
      );
